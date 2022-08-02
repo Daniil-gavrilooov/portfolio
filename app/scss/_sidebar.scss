@@ -7,7 +7,15 @@
         line-height: 24px;
         text-transform: uppercase;
         margin-bottom: 48px;
+        &-mail{
+            cursor: pointer;
+            & span{
+                display: none;
+            }
+        } 
+        
     }
+
     &__text,
     &__year {
         font-weight: 400;
