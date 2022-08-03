@@ -23,3 +23,25 @@ body{
     justify-content: space-between;
 }
 
+.design__line{
+    position: relative;
+    &::before,
+    &::after,
+    & span{
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 100vh;
+        background-color: #191B1A;
+       top: 0;
+    }
+    &::before{
+        left: 47.1%;
+    }
+    &::after{
+        right: 22.8%;
+    }
+    & span{
+        left: 15%;
+    }
+}
