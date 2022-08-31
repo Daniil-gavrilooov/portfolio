@@ -1,7 +1,8 @@
 .content {
+    padding-bottom: 50px;
     &__inner {
-        display: flex;
-        gap: 18px;
+        // display: flex;
+        // gap: 18px;
 
         & .content__item:nth-child(1),
         & .content__item:nth-child(6),
@@ -38,6 +39,9 @@
     }
 
     &__inner {
+
+        max-width: 1056px;
+
 
         & .content__item:nth-child(1) .content__title,
         & .content__item:nth-child(6) .content__title,
@@ -80,6 +84,17 @@
         }
     }
 
+    &__container{
+        overflow: hidden;
+    }
+
+    &__track{
+        display: flex;
+        gap: 18px;
+        transition: .3s;
+    }
+
+
     &__title-text {
         font-weight: 700;
         font-size: 20px;
@@ -106,6 +121,8 @@
         transition: all .5s ease;
     }
 
+
+
     &__item:hover .content__prompt {
         opacity: 1;
         transition: all .5s ease;
@@ -118,6 +135,14 @@
 
     &__item:hover .content__title {
         transform: translateY(-550%);
+    }
+
+    &__btns{
+        display: flex;
+        justify-content: end;
+        gap: 15px;
+        margin-top: 5%;
+
     }
 
 }

@@ -20,28 +20,34 @@ body{
 
 .wrapper{
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
 }
 
-.design__line{
-    position: relative;
-    &::before,
-    &::after,
-    & span{
-        position: absolute;
-        content: '';
-        width: 2px;
-        height: 100vh;
-        background-color: #191B1A;
-       top: 0;
-    }
-    &::before{
-        left: 47.1%;
-    }
-    &::after{
-        right: 22.8%;
-    }
-    & span{
-        left: 15%;
-    }
+// .design__line{
+//     position: relative;
+//     &::before,
+//     &::after,
+//     & span{
+//         position: absolute;
+//         content: '';
+//         width: 2px;
+//         height: 100vh;
+//         background-color: #191B1A;
+//        top: 0;
+//     }
+//     &::before{
+//         left: 47.1%;
+//     }
+//     &::after{
+//         right: 22.8%;
+//     }
+//     & span{
+//         left: 15%;
+//     }
+// }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
